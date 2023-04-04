@@ -63,7 +63,7 @@ function buildCharts(sample) {
     // Deliverable 1: 3. Create a variable that holds the samples array. 
     var samples = data.samples;
     // Deliverable 1: 4. Create a variable that filters the samples for the object with the desired sample number.
-    var samples_filter = samples.filter(Obj => Obj.id == sample);
+    var samples_filter = samples.filter(sampleObj => sampleObj.id == sample);
     // Deliverable 3: 1. Create a variable that filters the metadata array for the object with the desired sample number.
 
     // Deliverable 1: 5. Create a variable that holds the first sample in the array.
@@ -74,6 +74,9 @@ function buildCharts(sample) {
     var otu_ids = result.otu_ids;
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values;
+    console.log(otu_ids)
+    console.log(otu_labels)
+    console.log(sample_values)
     // Deliverable 3: 3. Create a variable that holds the washing frequency.
 
 
