@@ -72,8 +72,8 @@ function buildCharts(sample) {
 
     // Deliverable 1: 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = result.otu_ids;
-    var otu_labels = result.otu_labels
-    var sample_values = result.sample_values
+    var otu_labels = result.otu_labels;
+    var sample_values = result.sample_values;
     // Deliverable 3: 3. Create a variable that holds the washing frequency.
 
 
@@ -81,7 +81,7 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order 
     // so the otu_ids with the most bacteria are last. 
     var yticks = otu_ids.slice(0,10).map(id => `OTU $[id]`).reverse();
-    var xticks = sample_values.slice(0,10).reverse()
+    var xticks = sample_values.slice(0,10).reverse();
 
     // Deliverable 1: 8. Create the trace for the bar chart. 
     var barData = [ {
