@@ -75,9 +75,17 @@ function buildCharts(sample) {
     var otu_ids = result.otu_ids;
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values;
+
+    bublabels = result.otu_Labels;
+    bubvalues = result.sample_values;
+
     console.log(otu_ids)
     console.log(otu_labels)
     console.log(sample_values)
+    
+    console.log(bubvalues)
+    console.log(bublabes)
+
     // Deliverable 3: 3. Create a variable that holds the washing frequency.
     var wfreqs = gaugeResult.wfreq;
     console.log(wfreqs)
@@ -108,12 +116,12 @@ function buildCharts(sample) {
     // Deliverable 2: 1. Create the trace for the bubble chart.
     var bubData = [{
       x: otu_ids,
-      y: otu_Values,
-      text: otu_Labels,
+      y: bubvalues,
+      text: bubLabels,
       mode: "markers",
        marker: {
-         size: otu_Values,
-         color: otu_Values, 
+         size: bubvalues,
+         color: bubvalues 
        }
     }];
     // Deliverable 2: 2. Create the layout for the bubble chart.
@@ -125,6 +133,7 @@ function buildCharts(sample) {
   };
     // Deliverable 2: 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubData, bubLayout)
+
     // Deliverable 3: 4. Create the trace for the gauge chart.
     var gaugeData = [{
       value: wfreqs,
