@@ -84,7 +84,7 @@ function buildCharts(sample) {
     console.log(sample_values)
     
     console.log(bubvalues)
-    console.log(bublabes)
+    console.log(bublabels)
 
     // Deliverable 3: 3. Create a variable that holds the washing frequency.
     var wfreqs = gaugeResult.wfreq;
@@ -117,7 +117,7 @@ function buildCharts(sample) {
     var bubData = [{
       x: otu_ids,
       y: bubvalues,
-      text: bubLabels,
+      text: bublabels,
       mode: "markers",
        marker: {
          size: bubvalues,
